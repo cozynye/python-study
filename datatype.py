@@ -29,12 +29,30 @@ print(type(string), string)
 list=[10,'list',30,'bye']
 print(type(list),list)
 
+#리스트 요소 추가, 삽입, 삭제
+list.append(8)
+print(list)
+list.insert(-1, 'last')
+print(list)
+
+delist=[10,20,30,40,50]
+delist.pop()
+print(delist)
+c=delist.pop(2)
+print(c)
+
+
+
 tuple=(1,)
 print(type(tuple),tuple)
 tuple='test',2
 print(type(tuple),tuple)
 tuple=(1,2,3,4)
 print(type(tuple),tuple)
+
+tuples=(1,2,3,4,5)
+new_tuples=tuples+(6,7)
+print(new_tuples)
 
 
 # 매핑형 - 딕셔너리(dictionary), 클래스 인스턴스, C확장형 등
