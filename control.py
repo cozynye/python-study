@@ -69,9 +69,9 @@ n = 0
 for i in a:
     n = n + 1
     if i<60: continue
-    print("%d번 수험생 합격입니다." % n)#포매팅
+    print("%d번 수험생 합격입니다." % n)#포매팅 %d가 변수 n의 값으로 치환되어 출력
 
 
 num=int(input())
-gugu=[num*b for b in range(1,10)]
+gugu=[num*b for b in range(1,10)] #1부터 9까지
 print(gugu)

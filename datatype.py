@@ -10,6 +10,17 @@ print(type(number_float),number_float)
 number_complex=3+3j
 print(type(number_complex),number_complex)
 
+a = 2 + 3j
+b=complex(3, -4)
+
+#>>> a (2+3j)
+#>>> b (3-4j)
+
+#>>> a + b (5-1j)
+#>>> a - b (-1+7j)
+
+
+
 # 논리형
 boolean_one=3<4
 print(type(boolean_one),boolean_one)
@@ -30,15 +41,16 @@ list=[10,'list',30,'bye']
 print(type(list),list)
 
 #리스트 요소 추가, 삽입, 삭제
-list.append(8)
+append() #리스트의 마지막 요소에 추가
+list.append(8) #마지막 요소에 8 추가
 print(list)
 list.insert(-1, 'last')
 print(list)
 
 delist=[10,20,30,40,50]
-delist.pop()
+delist.pop() #맨 마지막 요소를 꺼내고 삭제
 print(delist)
-c=delist.pop(2)
+c=delist.pop(2) #2번째 요소를 꺼내서 변수에 저장
 print(c)
 
 
@@ -55,6 +67,6 @@ new_tuples=tuples+(6,7)
 print(new_tuples)
 
 
-# 매핑형 - 딕셔너리(dictionary), 클래스 인스턴스, C확장형 등
+# 딕셔너리(dictionary)
 dict={'one' : 1, 'two' : 'second', 'three' : 3}
 print(type(dict), dict)
