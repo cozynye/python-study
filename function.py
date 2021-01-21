@@ -108,10 +108,10 @@ def vartest(a):
 a = vartest(a)
 print('return',a)
 
-# 2. global 사용하기
+# 2. global 명령어 사용하기
 a = 2
 def vartest():
-    global a
+    global a    # 함수 안에서 함수 밖의 a 변수를 직접 사용하겠다는 뜻(좋은 방법은 아니다)
     a = a+1
 
 vartest()
