@@ -35,17 +35,16 @@ class Fourcal:
         return  self.first*self.second
 
 a=Fourcal();
+
 a.setdata(20,30)
 print(a.add())  #a.add() 메서드 호출 전에 a.setdata(4, 2) 가 먼저 호출되어 a.first = 4, a.second = 2 라고 이미 설정
 print(a.mul())
 
 
-
+# 위의 예제에서 setdata 메서드 수행하지 않고 다른 메서드 실행하면 오류
+# 초깃값이 필요할 때 생성자(객체가 생성될 때 자동으로 호출되는 메서드를 의미)를 사용
 class Fourcal:
     def __init__(self, first, second):
-        self.first = first
-        self.second = second
-    def setdata(self, first, second):
         self.first = first
         self.second = second
     def add(self):

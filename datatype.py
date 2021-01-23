@@ -41,7 +41,7 @@ list=[10,'list',30,'bye']
 print(type(list),list)
 
 #리스트 요소 추가, 삽입, 삭제
-append() #리스트의 마지막 요소에 추가
+#append() #리스트의 마지막 요소에 추가
 list.append(8) #마지막 요소에 8 추가
 print(list)
 list.insert(-1, 'last')
