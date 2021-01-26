@@ -5,11 +5,10 @@
 #     ...
 # 함수는 시스템에 내장되어 있는 내장 함수, 사용자가 만든 사용자 정의 함수, 라이브러리 형태로 모듈화시킨 외장 함
 
-def gugu(a):        #a는 매개변수 : 함수에 입력으로 전달된 값을 받는 변수
-    if(a>1 and a<10) : t=[a*b for b in range(1,10)]
-    else : t='범위를 넘어 섰습니다'
-    return t
-print(gugu(2))      #2는 인수 : 함수를 호출할 때 전달하는 입력값
+def gugu(a,b):        #a,b는 매개변수 : 함수에 입력으로 전달된 값을 받는 변수
+
+    return a+b
+print(gugu(2,5))      #2,5는 인수 : 함수를 호출할 때 전달하는 입력값
 
 # 여러개의 입력값을 받는 함수
 # def 함수이름(*매개변수):
@@ -37,6 +36,7 @@ def add_mul(choice, *num) :
             result=result*i
     else: result='오류'
     return result
+
 print(add_mul('add', 1,2,3,4,5,6,7,8,9,10,))
 print(add_mul('mul', 1,2,3,4,5,6,7,8,9,10,))
 print(add_mul('mul'))       #인수와 매개변수의 수가 일치하지 않아도 함수 실행
@@ -110,6 +110,8 @@ vartest()
 print('global3',a)
 
 #lambda
+def a(a,b):
+    return a+b
 add=lambda a,b:a+b
 print(add(3,5))
 print(add)
@@ -117,7 +119,7 @@ print(add)
 
 # format()
 
-# enumerate() - 순서가 있는 자료형(리스트,튜플 문자열) 입력하면 인덱스를 포함한 요솟값을 반환
+# enumerate() - 순서가 있는 자료형(리스트,튜플, 문자열) 입력하면 인덱스를 포함한 요솟값을 반환
 
 num=(10,20,30,40,50)
 for i in num :

@@ -1,6 +1,6 @@
 # 파이썬의 자료형에는 크게 나누면 '수치형(numbers)', '논리형(bool)', '순서형(sequence)', '매핑형(mapping)',이 있다.
 
-# 수치형 - 정수(int), 더 큰 정수(long int), 소수(float), 복소수(complex)
+# 수치형 - 정수(int), 소수(float), 복소수(complex)
 number_int=123
 print(type(number_int),number_int)
 
@@ -45,6 +45,8 @@ print(type(list),list)
 list.append(8) #마지막 요소에 8 추가
 print(list)
 list.insert(-1, 'last')
+print(list)
+list.insert(2, 'second')
 print(list)
 
 delist=[10,20,30,40,50]

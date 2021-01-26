@@ -9,6 +9,7 @@
 #     ...
 
 a=int(input())
+
 if a==1 :
     print('일입니다')
 # print('이건 안될걸')
@@ -31,9 +32,9 @@ else:
 if a==1:
         pass
 else:
-        print("값이 없습니다.")
+        print("%d은 일이 아니라구" % a)
 
-
+print('while')
 # while : 해당 조건이 참인 경우 반복해서 수행
 # while < 조건문 >:
 #         < 수행할 문장1 >
@@ -43,17 +44,15 @@ a=int(input())
 while a<10 :
     a=a+1
     print(a)
-    if(a==10) :
-        print('종료')
 
 
+print('coninue')
 b=10
 while b<30 :
-
-        b = b + 1
-        if b%2==0 : continue
-        print(b)
-        if(b==25) : break
+    b = b + 1
+    if b%2==0 : continue
+    print(b)
+    if(b==25) : break
 
 
 # for 변수 in 리스트(튜플, 문자열):

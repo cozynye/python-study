@@ -34,7 +34,7 @@ class Fourcal:
     def mul(self):
         return  self.first*self.second
 
-a=Fourcal();
+a=Fourcal()
 
 a.setdata(20,30)
 print(a.add())  #a.add() 메서드 호출 전에 a.setdata(4, 2) 가 먼저 호출되어 a.first = 4, a.second = 2 라고 이미 설정
